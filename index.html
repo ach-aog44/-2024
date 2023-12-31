@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>سنة سعيدة فاطمة </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+</head>
+<body style="position: relative; background: url('images/nen.jpg') repeat;" oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'>
+<div class="giua" style="width: 95%; margin: 100px auto; text-align: center; z-index: 1;">
+    <h1 style="text-transform: uppercase; color: #d9534f;">سنة سعيدة يا أعز وحدة على قلبي</h1>
+    <h2 style="color: #337ab7; text-transform: capitalize">يارب تدخل عليك هاد السنة بالنجاح و الأفراح و السرور </h2>
+    <h2 style="color: #c70629; text-transform: capitalize">أشرف[2024]</h2>
+    <marquee behavior="alternate"><img src="images//meo.gif" alt="ga"></marquee>
+</div>
+<div id="interaction-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent;">
+    <audio id="background-audio" autoplay> 
+            <source src="y2mate.is -  HAPPY NEW YEAR 2024 -8Q7WKgO5ZXI-192k-1704037517.mp3" type="audio/ogg"> 
+            <source src="y2mate.is -  HAPPY NEW YEAR 2024 -8Q7WKgO5ZXI-192k-1704037517.mp3" type="audio/mpeg"> 
+      </audio> 
+  
+      <script>
+        const audio = document.getElementById("background-audio");
+        const interactionOverlay = document.getElementById("interaction-overlay");
+  
+        // Start playing audio when the overlay is touched or clicked
+        interactionOverlay.addEventListener("touchstart", playAudio);
+        interactionOverlay.addEventListener("click", playAudio);
+  
+        function playAudio() {
+            audio.play().catch(error => {
+                // Autoplay was prevented, you can handle this case here
+                console.error("Autoplay was prevented: ", error);
+            });
+  
+            // Remove the interaction overlay after the audio starts
+            interactionOverlay.style.display = "none";
+        }
+    </script>
+  </div>
+
+<script type="text/javascript">
+    $("#tet")
+        .countdown("2023/01/22", function(event) {
+            $(this).text(
+                event.strftime('%D Ngày %H Giờ %M Phút %S Giây')
+            );
+        });
+    $("#nghi")
+        .countdown("2023/1/15 17:30:00", function(event) {
+            $(this).text(
+                event.strftime('%D Ngày %H Giờ %M Phút %S Giây')
+            );
+        });
+    $('.giua').height('769px');
+</script>
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
